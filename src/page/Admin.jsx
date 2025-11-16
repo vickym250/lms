@@ -11,7 +11,7 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}api/admin/log`, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/admin/log`, {
         userId,
         password,
       });
@@ -19,7 +19,7 @@ export default function AdminLogin() {
       if (res.data.success) {
         alert("✅ Login Successful!");
         localStorage.setItem("adminToken", res.data.token);
-        window.location.href = "/admindash";
+        window.location.href = "/admin/dash";
       } else {
         alert("❌ " + res.data.message);
       }

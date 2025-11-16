@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   const menuItems = [
-    { name: "Dashboard", icon: <FaTachometerAlt />, path: "/admin/dashboard" },
-    { name: "Students", icon: <FaUserGraduate />, path: "/admin/students" },
-    { name: "Teachers", icon: <FaChalkboardTeacher />, path: "/admin/teachers" },
+    { name: "Dashboard", icon: <FaTachometerAlt />, path: "/admin/dash" },
+    { name: "Students", icon: <FaUserGraduate />, path: "/admin/allstudent" },
+    { name: "Teachers", icon: <FaChalkboardTeacher />, path: "/admin/allteacher" },
     { name: "Courses", icon: <FaBook />, path: "/admin/courses" },
     { name: "Settings", icon: <FaCog />, path: "/admin/settings" },
   ];

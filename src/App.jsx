@@ -16,6 +16,8 @@ import Dashboard from "./student/student";
 import ViewCourse from "./student/AllCourse";
 import AdminDashboard from "./admin/adminDash";
 import AdminLogin from "./page/Admin";
+import AllStudent from "./admin/AllStudent";
+import AllTeacher from "./admin/AllTeacher";
 
 
 
@@ -25,12 +27,20 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/admindash",
+    path: "/admin/dash",
     element:<AdminDashboard/>,
   },
   {
     path: "/admin",
     element:<AdminLogin/>,
+  },
+  {
+    path: "/admin/allstudent",
+    element:<AllStudent/>,
+  },
+  {
+    path: "/admin/allteacher",
+    element:<AllTeacher/>,
   },
    {
     path: "/stdash/:id",
